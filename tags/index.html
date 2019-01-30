@@ -10,7 +10,7 @@
     <link rel="icon" href="/favicon.ico">
   
     
-  <title>Archives | yclrz</title>
+  <title>tags | yclrz</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,7 +44,7 @@
       
         <li class="nav-item">
           
-            <a href="/tags" class="item-link">标签</a>
+            <a href="/tags" class="item-link active">标签</a>
           
         </li>
       
@@ -52,26 +52,31 @@
   </div>
 </header>
 
-  <main id="archive">
-  <div class="content">
-        
-    
-      <div class="year-list">
-        <h3>2019</h3>
-        <ul>
-          
-            <li>
-              <time>2019/01/30</time>
-              <a href="/2019/01/30/CCF-WC2019-酱油记/">
-                <span>
+  <main id="tags">
+  <div class="tags-container">
+  <div id="tag_cloud" class="tags">
+      
+          <a href="#酱油记" title="酱油记" rel="1">酱油记</a>
+      
+  </div>
+  
+  <div class="tag-list">
+      <span class="fa fa-tag listing-seperator" id="酱油记">
+          <span class="tag-text">酱油记</span>
+      </span>
+      
+        <div class="post-preview">
+            <a href="/2019/01/30/CCF-WC2019-酱油记/">
+                <h2 class="post-title">
                     CCF WC2019 酱油记
-                </span>
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-        
+                </h2>
+                
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </div>
+      
+  </div>
+    
   </div>
 </main>
 
