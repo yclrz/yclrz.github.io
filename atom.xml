@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yclrz.github.io/"/>
-  <updated>2019-02-16T07:50:32.073Z</updated>
+  <updated>2019-02-16T08:08:49.105Z</updated>
   <id>https://yclrz.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test_rss</title>
+    <link href="https://yclrz.github.io/2019/02/16/test-rss/"/>
+    <id>https://yclrz.github.io/2019/02/16/test-rss/</id>
+    <published>2019-02-16T08:08:31.000Z</published>
+    <updated>2019-02-16T08:08:49.105Z</updated>
+    
+    <content type="html"><![CDATA[<p>hello? hello? hello?</p><p>不要回复！不要回复！不要回复！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;hello? hello? hello?&lt;/p&gt;
+&lt;p&gt;不要回复！不要回复！不要回复！&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>周六报(第0期)</title>
