@@ -10,7 +10,7 @@
     <link rel="icon" href="/favicon.ico">
   
     
-  <title>关于 | yclrz</title>
+  <title>links | yclrz</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +32,7 @@
       
         <li class="nav-item">
           
-            <a href="/about" class="item-link active">关于</a>
+            <a href="/about" class="item-link">关于</a>
           
         </li>
       
@@ -50,7 +50,7 @@
       
         <li class="nav-item">
           
-            <a href="/links" class="item-link">友链</a>
+            <a href="/links" class="item-link active">友链</a>
           
         </li>
       
@@ -62,16 +62,15 @@
   <div class="content">
     <article>
         <section class="content markdown-body">
-          <h1>关于</h1>
+          <h1>links</h1>
           <div class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> <time>2019/01/31</time>
+            <i class="fa fa-calendar" aria-hidden="true"></i> <time>2019/02/16</time>
             
             
           </div>
-          <p>我是湖北现役最菜OIer，目前已经有过NOIp爆零、垫底，WC爆零、垫底的经历。</p>
-<p>正在准备省选，争取不再爆零、垫底。</p>
-<p>我的QQ是2053385254，欢迎大佬来撩我。</p>
-<p>Codeforces目前是蓝名，1800+，努力上紫名中。。。</p>
+          <p><a href="https://cnblogs.com/xht37" target="_blank" rel="noopener">二中希望xht37</a></p>
+<p><a href="https://ouuan.github.io" target="_blank" rel="noopener">湖北最强ouuan</a></p>
+<p><a href="https://edgration.com" target="_blank" rel="noopener">什么都会edgration</a></p>
 
         </section>
     </article>
@@ -95,8 +94,8 @@
 <script type="text/javascript">
   /* * * CONFIGURATION VARIABLES * * */
   var disqus_shortname = "lrz";
-  var disqus_identifier = "https://yclrz.github.io/about/index.html";
-  var disqus_url = "https://yclrz.github.io/about/index.html";
+  var disqus_identifier = "https://yclrz.github.io/links/index.html";
+  var disqus_url = "https://yclrz.github.io/links/index.html";
 
   isAgent(getDisqus)
 
@@ -133,7 +132,6 @@
 
 
 
-
   <footer>
   <div class="copyright">
     <div>
@@ -145,65 +143,6 @@
   </div>
 </footer>
 
-
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="/lib/in-view.min.js"></script>
-<script src="/lib/lodash.min.js"></script>
-<script>
-  var isDown = true
-  var oldY = 0
-  inView.offset(50)
-
-  document.body.addEventListener('touchstart', function(){});
-  
-  window.addEventListener('scroll', _.throttle(e => {
-    var currentY = window.scrollY
-    if((oldY - currentY) < 0) {
-      isDown = true
-    } else {
-      isDown = false
-    }
-    oldY = currentY
-  }, 250))
-
-  $("article img").each(function() {
-      var strA = "<a data-fancybox='gallery' href='" + this.src + "'></a>";
-      $(this).wrapAll(strA);
-  });
-
-  $('.toc-link').each(function() {
-      var href = $(this).attr("href");
-      
-      inView(href).on('exit', () => {
-        if (isDown) {
-          handleActive(href)
-        }
-      })
-
-      inView(href).on('enter', () => {
-        if (!isDown) {
-          handleActive(href)
-        }
-      })
-
-      this.onclick = function(e) {
-        var pos = $(href).offset().top - 10;
-        $("html,body").animate({scrollTop: pos}, 300);
-        setTimeout(() => {
-          handleActive(href)
-        }, 350)
-        return false
-      }
-  })
-
-  function handleActive(href) {
-    document.querySelectorAll('.toc-link').forEach(elm => {
-      elm.classList.remove('active')
-    })
-    document.querySelector(".toc [href='"+ href +"']").classList.add('active')
-  }
-</script>
-<script src="/lib/jquery.fancybox.min.js"></script>
 
 
 </body>
