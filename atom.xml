@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>yclrz</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://yclrz.github.io/"/>
+  <updated>2019-02-16T07:50:32.073Z</updated>
+  <id>https://yclrz.github.io/</id>
+  
+  <author>
+    <name>lrz</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>周六报(第0期)</title>
+    <link href="https://yclrz.github.io/2019/02/16/%E5%91%A8%E5%85%AD%E6%8A%A5/%E5%91%A8%E5%85%AD%E6%8A%A5-%E7%AC%AC0%E6%9C%9F/"/>
+    <id>https://yclrz.github.io/2019/02/16/周六报/周六报-第0期/</id>
+    <published>2019-02-16T07:37:23.000Z</published>
+    <updated>2019-02-16T07:50:32.073Z</updated>
+    
+    <content type="html"><![CDATA[<p>正月初三有场 Global Round #1，Div. 1 + Div. 2，因为上次打 Goodbye 2018 + Hello 2019 自闭了，就没参加，打了场 vp，上交大学生出的，挺简单，很放松. 赛后发现我关注的人都涨了好多分，edt再次上紫了（sro Edgration.  orz），学弟上了100+pt，马上要比我高了（qwq），ouuan不出所料涨了30pt（他几乎没掉过分，tql，膜爆）. 如果我打的话也许还能上紫吧，不知道呢. 还是要加油呀，至少跟上大家的步伐吧. </p><p><img src="https://s2.ax1x.com/2019/02/10/kU3wvj.png" alt=""></p><p>正月初六的 Div.  2 场打到自闭. 题目都不难，但是无端挂了一道，卡了一道，没时间放了一道，最后只完成了3题. 哎，论手速和心态的重要性. 临场发挥的作用甚比于个人水平. </p><p><img src="https://s2.ax1x.com/2019/02/11/ka8mH1.png" alt=""></p><p>事后又发现自己不会写线段树区间乘法？印象中明明写过的呀，都忘了吗？于是鸽了F. </p><p><img src="https://s2.ax1x.com/2019/02/11/kavn1J.png" alt=""></p><p>这天突然记起之前在cf上看到过一个vp hunter，就是那种可以给一组未参加过的比赛列表的小工具. 上谷哥搜了搜，就发现了这么一个东西：</p><p>Discord上有一个非常神奇的cf讨论组<a href="https://discordapp.com/channels/326795829664808960" target="_blank" rel="noopener">CP Community</a>，组内有个非常神奇的<a href="https://discordapp.com/channels/326795829664808960/339268856671502346" target="_blank" rel="noopener">bot</a>，这bot简直就是个神器. 有多神奇呢？你可以让这个bot提供一组可参加的vp比赛. . . <del>还可以让他和你尬聊</del></p><p>这个神奇的玩意儿是在cf某人的<a href="https://codeforces.com/blog/entry/52778" target="_blank" rel="noopener">blog</a>里发现的，可以说是业界良心了. </p><p>我马上就让他给我整了一组：</p><p><img src="https://s2.ax1x.com/2019/02/16/ksZcAx.png" alt=""></p><p>简直良心有木有！</p><p>妈妈再也不用担心我找不到vp场啦！</p><p><del>欸话说vp不就是在contest列表上翻一翻的事儿吗</del></p><p>然而尬聊功能好像下线了. . .</p><p>总之以后可以用这个bot找vp打啦！</p><p><del>总觉得你是在拿一个很trival的东西在水博客</del></p><p>当然，掌握科学上网的姿势是必要的！</p><p><del>肉身翻墙的请忽略233</del></p>]]></content>
+    
+    <summary type="html">
+    
+      《周六报》开更啦！
+    
+    </summary>
+    
+    
+      <category term="周六报" scheme="https://yclrz.github.io/tags/%E5%91%A8%E5%85%AD%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CCF WC2019 酱油记</title>
+    <link href="https://yclrz.github.io/2019/01/30/CCF-WC2019-%E9%85%B1%E6%B2%B9%E8%AE%B0/"/>
+    <id>https://yclrz.github.io/2019/01/30/CCF-WC2019-酱油记/</id>
+    <published>2019-01-30T14:39:48.000Z</published>
+    <updated>2019-01-31T15:49:03.121Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Day-0"><a href="#Day-0" class="headerlink" title="Day 0"></a>Day 0</h2><p>早上六点四十五起床去赶火车，坐了一上午+一中午的高铁终于到广州南站了，而且因为没准备车上的午餐饿的两眼发绿，一下车就吃了个肯德基。然后在大巴上颠簸了一个小时到了广州二中。路上还吃了把鸡。来宿舍后和其他湖北OIer面基，发现大家长得都很帅都很成熟，除了xqy还是个孩子的模样。其他人都是第一次见面，还记不住长相，同寝室有一个华一的，也记不住长相。晚上在学校食堂吃，这里的炸鱼块真好吃，看来这一个星期的伙食是不用担心了。八点半去报告厅看开幕式讲座，今年WC要考题答了，然而我还没见过题答，怕是要gg了（就算是传统题也会gg）。有趣的是开幕式有一个节目是阿卡贝拉合唱，然后当即有人发现了玄机：阿卡贝拉——AK不了！怕是真凉凉了（反正我是要爆零的QAQ）。</p><h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>今天是听课日，早上记错了时间去完了十分钟。坐在最后面听🌲🌲🌲讲评测系统，然后看他极力推荐评测鸭，发现这真是个厉害的东西，如果CCF也能用这样的评测系统就好了。中间还给听课的人发了一个小黄鸭（当然数量有限我又坐在最后面所以什么也没有），说是可以debug的时候用，还可以带入考场放松心情（其实我们机房也有一个学长留下来的魔方啦，一样的）。中午排了好长的队吃饭，不过等的时间并不长，被强行安排了好多基围虾，额。中午占好下午的座位后在学校里逛了会儿（实际上是找不到回寝室的路了233），在宿舍玩了玩边缘世界，并没有什么很大的进展。下午去听姚班大佬讲量子计算，因为自己实在是太菜加上教师太闷导致精神昏昏沉沉的，不小心趴了一会儿一睁眼就不知道在讲什么了，还好很快就到了课件休息的时候，和学弟跑回寝室了。晚上去体育馆试机，键盘手感好评，不过显示器一会儿就罢工了，不得不换了一台。用手机翻了翻ouuan的博客，看了他写的UER#3T1题解，%得五体投地。</p><h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>早上听了具体数学选讲和什么字符串算法，因为内容过（wo）于（tai）硬（cai）核（le）所以打了一上午瞌睡，而且还有点感冒。。。下午听IOI+ACM试题选讲，毫无悬念的又打了一下午瞌睡。。。晚上去听队爷讲课，发现除了LCA大爷讲了自己发明的黑科技，另外的都是搬运了很神奇的论文来讲，毫无悬念我一个都没懂。晚上的CF咕了，怕第二天上午听课吃到，虽然去了也是懵逼的。</p><h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3"></a>Day 3</h2><p>继续懵逼。。。晚上近距离接触了松爷，学弟还和松爷说话了orzorzorz</p><h2 id="Day-4"><a href="#Day-4" class="headerlink" title="Day 4"></a>Day 4</h2><p>继续懵逼。。。</p><h2 id="Day-5"><a href="#Day-5" class="headerlink" title="Day 5"></a>Day 5</h2><p>继续懵逼。。。</p><h2 id="Day-6"><a href="#Day-6" class="headerlink" title="Day 6"></a>Day 6</h2><p>考试day，早就做好爆零的准备了qwq（还有yyf继续吊打湖北的准备qwq）</p><p>考试前有小姐姐发面包和水好评（虽然面包没吃扔了）</p><p>因为事先被告知有三种不同题型，心里还是有点虚。</p><p>开T1，发现有几个点集训队分值为1，那么就把这几个点打了吧。打完已经过了两个小时了。代码写了3.8k，全是暴力，太惨了。</p><p>T2题面太长了，不想看，就爆零了qwq</p><p>T3很难搞啊，可能是我没看出有 $\le$ 和 $\ge$ 吧，一直纠结于相等的怎样处理，好在中途继承搞T1的战略把分值最小的点搞了，然后开始自闭，看了看交互库，发现相等会返回rand，然后花15min搞了个rand，虽然知道这样骗不到分，但是总不能闲着啊。最后15min想了想最小的数据点，好像有点搞头，然后考试结束辽。</p><p>考完后大家都很懵逼的样子（除我皆fAKe），中午打了几盘斗地主，一手好牌打得稀烂，去看成绩，发现高二我最低？哭辽qwq好像除我皆有牌的样子qwq果不其然yyf又吊打我们了qwq好像ag稳了的样子？去听了听题解，T1神奇的树计数+多项式？还以为prufer序列是不会考的，结果今年考出来了，多项式只会加减乘，呵呵。T2是什么毒瘤<del>乱</del> 搞法？没看题很懵逼。T3大力分析一波，各种大于等于，然后得到很神奇的做法？菜鸡表示只会手玩什么都不会qwq貌似打铁了qwq</p><p>晚上临时组织汇演，效率非常高，而且节目效果非常棒，我们都在不停的鼓掌或是大笑。不过后来出了车祸，因为组织者没有审查节目，导致有两个非常不合适的节目上台了，观众都挺尴尬的，最后还演化成动手事故了，收尾不太好，大家都很尴尬。</p><h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7"></a>Day 7</h2><p>早上被强行叫醒乘车去科技馆，路上晕车好难受。太阳好大好大，我还穿着羽绒服qwq等了半天终于进馆了，和学弟绕着馆玩，体验了一把翻车，人生第一次头朝下，感觉很好。因为早上没吃饭，中午饿的要死了，但就是不开饭。最后分到了一份盒饭，一点青菜加瘦肉，不过味道还行。吃完饭等了一个多小时刷知乎刷到自闭终于可以回去了，不知道为什么还要安排饭后有一个小时游览时间，本来一个小时的吃饭时间已经很多了，真的很无聊，差评。回寝室睡了会儿去看闭幕式，为什么要把灯打到观众席啊？本来想看看小姐姐跳舞的结果只能低头刷知乎了qwq中间穿插各种领导讲话，dzd也来了，开始讲话时挺有趣的，破冰效果很好，然后讲了讲传闻的OI成野鸡竞赛面临取缔的问题，告诉我们继续搞，CCF会去处理，算是对家长们的一个交代吧，毕竟从今天上午开始家长群就炸了（反正我很菜的我最多只能上hust的qwq）。</p><p>吃完饭和edt道了别，他们凌晨两点的火车还是快速的😂他们还打算先去看个电影再去车站，太厉害了。晚上继续颓啊颓，补完了酱游记。</p><p>WC唯一的收获就是一个铁牌和🌲🌲🌲的小黄鸭。顺便还搞丢了水壶。</p><p>恭喜湖北喜提三枚Ag，去年还有Au的，今年竟然还开倒车了。（<del>因为我拖后腿了</del>）</p><h2 id="Day-8"><a href="#Day-8" class="headerlink" title="Day 8"></a>Day 8</h2><p>回到湖北后才发现现在还是冬天😂因为广州一直都很热，丝毫感觉不到冬天的气息。</p><p>我还是喜欢湖北的气候，好歹四季分明吧，广州待着不习惯。</p>]]></content>
+    
+    <summary type="html">
+    
+      苣蒻来打铁啦
+    
+    </summary>
+    
+    
+      <category term="酱油记" scheme="https://yclrz.github.io/tags/%E9%85%B1%E6%B2%B9%E8%AE%B0/"/>
+    
+  </entry>
+  
+</feed>
