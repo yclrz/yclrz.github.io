@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang=>
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="湖北最菜的没学上的老年OIer">
+  <meta name="keywords" content="">
+  
+    <link rel="icon" href="/favicon.ico">
+  
+    
+  <title>An OI Life(1) | yclrz</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+  <div class="header-container">
+    <a class="logo" href="/">
+      <span>yclrz</span>
+    </a>
+    <ul class="right-header">
+      
+        <li class="nav-item">
+          
+            <a href="/" class="item-link">首页</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/about" class="item-link">关于</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/archives" class="item-link">归档</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/tags" class="item-link">标签</a>
+          
+        </li>
+      
+    </ul>
+  </div>
+</header>
+
+  <main id="post">
+  <div class="content">
+    <article>
+        <section class="content markdown-body">
+          <h1>An OI Life(1)</h1>
+          <div class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> <time>2019/02/24</time>
+            
+            
+              | 
+                  <i class="fa fa-tag" aria-hidden="true"></i>
+                
+               
+  <a href="/tags/#An OI Life" class="tag">An OI Life</a>
+
+
+            
+          </div>
+          <p>星期天：</p>
+<p>下午终于厚着脸皮求edt加友链了. 引导流量++. 😂</p>
+<p>为了订阅其他OIer的博客，开始用Feedly，因为眼瞎没找到他们的RSS链接，其实博客上都挂着.</p>
+<p>在我苦苦请求下要到了学弟博客的rss，之前他没有开放这个.</p>
+<p>星期二：</p>
+<p>凌晨的CF打出了历史最低分…一直卡在C题上了…</p>
+<p>因为平时训练很少接触这种纯细节题，想起来思路就不是很顺畅.</p>
+<p>所以平时白天要坚持打vp，才能维持水准.</p>
+<p>每天晚饭后可以尝试打一场，因为那时候也会比较犯困，心理状态比起其他时刻更接近凌晨比赛的情况.</p>
+<p>而且更槽糕的是，白天一直在调试一道费用流的题，搞得心里非常堵，一直到晚上打比赛心里还是堵.</p>
+<p>真是一环套一环. 😥</p>
+<p><img src="https://s2.ax1x.com/2019/02/19/kgu0zt.png" alt=""></p>
+<p>成功垫底.</p>
+<p>另一边传来喜讯：BZOJ过200T啦！</p>
+<p><img src="https://s2.ax1x.com/2019/02/19/kglHj1.png" alt=""></p>
+<p>第200T是 <a href="https://lydsy.com/JudgeOnline/problem.php?id=2127" target="_blank" rel="noopener">2127: happiness</a>，一道简单的网络流题目.</p>
+<p>省选前有望做到300T.</p>
+<p>晚上打了一场随机vp，竟然是14年杜教出的题，orzorzorz.</p>
+<p>而且那时候zzq还是pupil😂</p>
+<p>打的是Div. 2场，然后D写成💩了…….</p>
+<p>说给你n个不同的自然数，要求分成两个集合，满足x和a-x同时在A集合，或者x和b-x同时在B集合.</p>
+<p>感觉像2-SAT，然而早就忘了2-SAT是啥了😂</p>
+<p>然后开始建图，发现不就是贪心配对嘛.</p>
+<p>然后就写成💩了……</p>
+<p>看了看题解，就是个并查集，因为x和a-x和b-x要在一起……emm……</p>
+<p>星期三：</p>
+<p>本来说好要早起来报道的，结果下雨了emm……</p>
+<p>于是事态变得有些失控？为嘛我一大早就坐在机房了？我不应该还躺在床上睡觉觉嘛？😴</p>
+<p>星期四：</p>
+<p>难得跑进最短时间了233</p>
+<p><img src="https://s2.ax1x.com/2019/02/21/kRr6JJ.png" alt=""></p>
+<p>费用流每次增广有单调性，所以直接修改一下模板就行了，不用再二分.</p>
+<p>晚上打的是#347，竟然发现了Sengxian大佬😃</p>
+<p>中途要交B的时候学校突然断网了😑 等了二十几分钟才恢复.</p>
+<p>D题是这样的，定义 [n] = {1,…,n}，给出一个 [n]-&gt;[n] 的函数 f，求出两个函数 g([n]-&gt;[m])，h([m]-&gt;[n])，使 g(h(x)) = x (x = [m])，h(g(x)) = f(x) (x = [n]).</p>
+<p>其实就是道初中函数题，然而我这个大彩笔直到vp结束都没A 😭</p>
+<p>从这两个式子可以推出 g(f(x)) = g(h(g(x))) = g(x)，说明 g(x) = g(f(x)) = g(f(f(x))) = ……</p>
+<p>按照这个条件，就可以把 [n] 分为 m 个部分，每个部分对应的 g 值必定是相等的，f 值也是.</p>
+<p>进一步发现一定存在 f(x) = x 的情况.</p>
+<p>做完所有判定以后，给 f(x) = x 的 g(x) 赋上 [m]，h 值也能用右式推出来.</p>
+<p>检查一下发现 g， h 完美地附和条件.</p>
+<p>(然而彩笔最后没有用 g 推 h 而是搞了个非常神奇的操作并且交错了代码导致 5 WA 😂)</p>
+<p>星期五：</p>
+<p>打了#306 (Div. 2)，构造场.</p>
+<p>D题说给出整数 k，构造图 G 满足每个点的度数为 k 且存在割边. 猜结论 k 必须是奇数再瞎搞一发 A 了.</p>
+<p>E 题给一张真值表，0-&gt;0=1，0-&gt;1=1，1-&gt;0=0，1-&gt;1=1，给出一个 01 数组 a，构造运算顺序得到 0. 可以推断 a[n] 必须为0，接下来只需要把所有值往右 push 就可以了，比赛的时候心生倦意没有想.</p>
+<p>星期六：</p>
+<p>早上终于安安心心地睡了个懒觉😁</p>
+<p>下午cf正式比赛，发挥还算正常，多亏了最近一直在训练.</p>
+<p>虽然最后变成群体涨分最高的了，但是因为底数比较低，涨之后的分数还是很低.</p>
+<p>恭喜学弟一路平推上紫了.</p>
+<p><img src="https://s2.ax1x.com/2019/02/24/k4kf1I.png" alt=""></p>
+<p>下一场只要发挥顺利……（算了别立flag了之前立的flag全倒了😂）</p>
+
+        </section>
+    </article>
+    
+        <!-- disqus 评论框 start -->
+        <div class="comment">
+            <div id="disqus_thread" class="disqus-thread">
+              <i>Loading comments box needs to over the wall</i>
+            </div>
+        </div>
+        <!-- disqus 评论框 end -->
+    
+        
+  </div>
+  <aside>
+    
+  </aside>
+</main>
+
+<!-- disqus 公共JS代码 -->
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES * * */
+  var disqus_shortname = "lrz";
+  var disqus_identifier = "https://yclrz.github.io/2019/02/24/An OI Life/An-OI-Life-1/";
+  var disqus_url = "https://yclrz.github.io/2019/02/24/An OI Life/An-OI-Life-1/";
+
+  isAgent(getDisqus)
+
+  // determine user agent in China
+  function isAgent(cb) {
+    var url = '//graph.facebook.com/feed?callback=h';
+    var xhr = new XMLHttpRequest();
+    var called = false;
+    xhr.open('GET', url);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+      called = true;
+      cb(true);
+      }
+    };
+    xhr.send();
+    // timeout 1s, this facebook API is very fast.
+    setTimeout(function() {
+      if (!called) {
+      xhr.abort();
+      cb(false)
+      }
+    }, 1000);
+  }
+
+  function getDisqus(isAgent) {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; 
+    dsq.async = true
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+  }
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+  <footer>
+  <div class="copyright">
+    <div>
+      &copy; 2019 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a>&nbsp
+    </div>
+    <div>
+      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath" target="_blank">Aath</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="/lib/in-view.min.js"></script>
+<script src="/lib/lodash.min.js"></script>
+<script>
+  var isDown = true
+  var oldY = 0
+  inView.offset(50)
+
+  document.body.addEventListener('touchstart', function(){});
+  
+  window.addEventListener('scroll', _.throttle(e => {
+    var currentY = window.scrollY
+    if((oldY - currentY) < 0) {
+      isDown = true
+    } else {
+      isDown = false
+    }
+    oldY = currentY
+  }, 250))
+
+  $("article img").each(function() {
+      var strA = "<a data-fancybox='gallery' href='" + this.src + "'></a>";
+      $(this).wrapAll(strA);
+  });
+
+  $('.toc-link').each(function() {
+      var href = $(this).attr("href");
+      
+      inView(href).on('exit', () => {
+        if (isDown) {
+          handleActive(href)
+        }
+      })
+
+      inView(href).on('enter', () => {
+        if (!isDown) {
+          handleActive(href)
+        }
+      })
+
+      this.onclick = function(e) {
+        var pos = $(href).offset().top - 10;
+        $("html,body").animate({scrollTop: pos}, 300);
+        setTimeout(() => {
+          handleActive(href)
+        }, 350)
+        return false
+      }
+  })
+
+  function handleActive(href) {
+    document.querySelectorAll('.toc-link').forEach(elm => {
+      elm.classList.remove('active')
+    })
+    document.querySelector(".toc [href='"+ href +"']").classList.add('active')
+  }
+</script>
+<script src="/lib/jquery.fancybox.min.js"></script>
+
+
+</body>
+</html>
