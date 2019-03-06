@@ -1894,7 +1894,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4460fc;
+  background: #ba0163;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3027,7 +3027,7 @@ ul.breadcrumb li+li:last-child {
   border-bottom: 1px solid #fc6423;
 }
 ::selection {
-  background: #fa0000;
+  background: #d7ebff;
   color: #f7f7f7;
 }
 ::-moz-selection {
@@ -3036,32 +3036,32 @@ ul.breadcrumb li+li:last-child {
 }
 .headband {
   height: 4px;
-  background: #2aea7b;
+  background: #d7ebff;
 }
 .site-meta {
   padding: 20px;
   color: #fff;
-  background: #2aea7b;
+  background: #d7ebff;
 }
 .site-subtitle {
   margin-top: 10px;
   font-size: 15px;
-  color: #fffafa;
+  color: #1a5cc8;
 }
 .site-title {
   margin-top: 4px;
   font-size: 20px;
-  color: #fffafa;
+  color: #1a5cc8;
 }
 .btn {
-  color: #fa9000;
+  color: #1a5cc8;
   background: #fff;
-  border: 2px solid #fa9000;
+  border: 2px solid #1a5cc8;
 }
 .btn:hover {
-  border-color: #fa9000;
+  border-color: #1a5cc8;
   color: #fff;
-  background: #fa9000;
+  background: #1a5cc8;
 }
 .posts-expand .post-title-link::before {
   content: "";
@@ -3070,7 +3070,7 @@ ul.breadcrumb li+li:last-child {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fa9000;
+  background-color: #1a5cc8;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
