@@ -189,7 +189,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #f5f7f9;
+  background: #f8f8ff;
 }
 @media (max-width: 767px) {
   body {
@@ -491,7 +491,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container .header-inner {
-    width: 1160px;
+    width: 960px;
   }
 }
 @media (min-width: 1600px) {
@@ -505,7 +505,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container .main-inner {
-    width: 1160px;
+    width: 960px;
   }
 }
 @media (min-width: 1600px) {
@@ -523,7 +523,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container .footer-inner {
-    width: 1160px;
+    width: 960px;
   }
 }
 @media (min-width: 1600px) {
@@ -1894,7 +1894,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ba0163;
+  background: #7578ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2553,7 +2553,7 @@ ul.breadcrumb li+li:last-child {
 }
 @media (min-width: 1200px) {
   .header {
-    width: 1160px;
+    width: 960px;
   }
 }
 @media (min-width: 1600px) {
@@ -3027,7 +3027,7 @@ ul.breadcrumb li+li:last-child {
   border-bottom: 1px solid #fc6423;
 }
 ::selection {
-  background: #d7ebff;
+  background: #1a5cc8;
   color: #f7f7f7;
 }
 ::-moz-selection {
@@ -3045,7 +3045,7 @@ ul.breadcrumb li+li:last-child {
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 13px;
   color: #1a5cc8;
 }
 .site-title {
