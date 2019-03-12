@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next pisces" lang="">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,7 +77,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -96,20 +94,18 @@
 
 
 
-  <meta name="description" content="前置技能：树形dp + 卡常大法（雾">
-<meta name="keywords" content="2018,动态规划,九省联考">
+  <meta name="description" content="前置技能：最大匹配 + 二分">
+<meta name="keywords" content="九省联考,2018,网络流">
 <meta property="og:type" content="article">
-<meta property="og:title" content="「九省2018」秘密袭击">
-<meta property="og:url" content="https://yclrz.github.io/2019/03/06/省选/2018/九省联考/秘密袭击/index.html">
+<meta property="og:title" content="「九省2018」劈配">
+<meta property="og:url" content="https://yclrz.github.io/2019/03/01/劈配/index.html">
 <meta property="og:site_name" content="lrz&#39;s blog">
-<meta property="og:description" content="前置技能：树形dp + 卡常大法（雾">
+<meta property="og:description" content="前置技能：最大匹配 + 二分">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://s2.ax1x.com/2019/03/07/kxQb8K.png">
-<meta property="og:updated_time" content="2019-03-07T12:22:37.347Z">
+<meta property="og:updated_time" content="2019-03-07T12:22:44.592Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="「九省2018」秘密袭击">
-<meta name="twitter:description" content="前置技能：树形dp + 卡常大法（雾">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/03/07/kxQb8K.png">
+<meta name="twitter:title" content="「九省2018」劈配">
+<meta name="twitter:description" content="前置技能：最大匹配 + 二分">
 
 
 
@@ -118,7 +114,7 @@
 
 
 
-  <link rel="canonical" href="https://yclrz.github.io/2019/03/06/省选/2018/九省联考/秘密袭击/">
+  <link rel="canonical" href="https://yclrz.github.io/2019/03/01/劈配/">
 
 
 
@@ -128,7 +124,7 @@
   };
 </script>
 
-  <title>「九省2018」秘密袭击 | lrz's blog</title>
+  <title>「九省2018」劈配 | lrz's blog</title>
   
 
 
@@ -343,7 +339,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yclrz.github.io/2019/03/06/省选/2018/九省联考/秘密袭击/">
+    <link itemprop="mainEntityOfPage" href="https://yclrz.github.io/2019/03/01/劈配/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lrz">
@@ -360,7 +356,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">「九省2018」秘密袭击
+          <h1 class="post-title" itemprop="name headline">「九省2018」劈配
 
               
             
@@ -386,7 +382,7 @@
                 
               
 
-              <time title="Created: 2019-03-06 19:38:20" itemprop="dateCreated datePublished" datetime="2019-03-06T19:38:20+08:00">2019-03-06</time>
+              <time title="Created: 2019-03-01 18:55:25" itemprop="dateCreated datePublished" datetime="2019-03-01T18:55:25+08:00">2019-03-01</time>
             
 
             
@@ -405,8 +401,8 @@
                 </span>
             
                 <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/03/06/省选/2018/九省联考/秘密袭击/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/06/省选/2018/九省联考/秘密袭击/" itemprop="commentCount"></span>
+                <a href="/2019/03/01/劈配/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/01/劈配/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -434,18 +430,12 @@
       
 
       
-        <p>前置技能：树形dp + 卡常大法（雾</p>
+        <p>前置技能：最大匹配 + 二分</p>
 <a id="more"></a>
-<p>苣蒻打了一上午暴力结果只有20pt。。。晕。。。</p>
-<p>翻了一下 <a href="https://rqy.moe/Solutions/bzoj5250/" target="_blank" rel="noopener">rqy</a> 的题解，是我不可做的题。。。</p>
-<p>再去翻了一下 <a href="https://www.cnblogs.com/cjyyb/p/10367187.html" target="_blank" rel="noopener">yyb</a> 的题解，才发现自己是真的🥬。。。</p>
-<p>本来背包复杂度是 $O(n^2k^2)$ 的，但是在 $ size $ 的帮助下可以少用一个 $k$，再去掉不可能的情况，最后复杂度是 $ O((n-k)k^2) $.</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">Created 2019-3-6</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">2000</span> + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> K = <span class="number">2000</span> + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> mod = <span class="number">64123</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> f[N][K], h[N];</span><br><span class="line"><span class="keyword">int</span> d[N], e[N], sz[N];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; g[N];</span><br><span class="line"><span class="keyword">int</span> n, k, W;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> fa)</span> </span>&#123;</span><br><span class="line">  f[u][e[u]] = <span class="number">1</span>;</span><br><span class="line">  sz[u] = e[u];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> v: g[u]) <span class="keyword">if</span> (v != fa) &#123;</span><br><span class="line">    dfs(v, u);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= sz[u] &amp;&amp; i &lt;= k; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= sz[v] &amp;&amp; i + j &lt;= k; j++) &#123;</span><br><span class="line">        h[i+j] += (ll)f[u][i] * f[v][j] % mod;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    sz[u] += sz[v];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= sz[u] &amp;&amp; i &lt;= k; i++) &#123;</span><br><span class="line">      (f[u][i] += h[i]) %= mod;</span><br><span class="line">      h[i] = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="meta">#<span class="meta-keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">  freopen(<span class="string">"read.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">  <span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d %d %d"</span>, &amp;n, &amp;k, &amp;W);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;d[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> u, v;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;u, &amp;v);</span><br><span class="line">    g[u].push_back(v);</span><br><span class="line">    g[v].push_back(u);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">      e[j] = d[j] &gt; d[i] || (d[j] == d[i] &amp;&amp; j &lt;= i);</span><br><span class="line">      cnt += e[j];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (cnt &lt; k) &#123;</span><br><span class="line">      <span class="keyword">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">memset</span>(f, <span class="number">0</span>, <span class="keyword">sizeof</span> f);</span><br><span class="line">    dfs(i, <span class="number">0</span>);</span><br><span class="line">    ans = (ans + (ll)f[i][k] * d[i]) % mod;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, ans);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>还有一种 $ O(nk) $ 的dp方法，可惜我智商下线，不懂.</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">Created 2019-3-6</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">2000</span> + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> K = <span class="number">2000</span> + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> mod = <span class="number">64123</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> f[N][K];</span><br><span class="line"><span class="keyword">int</span> d[N];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; g[N];</span><br><span class="line"><span class="keyword">int</span> n, k, W;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> u, <span class="keyword">int</span> fa)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (d[u] &gt; d[x] || (d[u] == d[x] &amp;&amp; u &lt; x)) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= k; i++) &#123;</span><br><span class="line">      f[u][i] = f[fa][i<span class="number">-1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= k; i++) &#123;</span><br><span class="line">      f[u][i] = f[fa][i];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> v: g[u]) &#123;</span><br><span class="line">    <span class="keyword">if</span> (v != fa) &#123;</span><br><span class="line">      dfs(x, v, u);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= k; i++) &#123;</span><br><span class="line">    (f[fa][i] += f[u][i]) %= mod;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="meta">#<span class="meta-keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">  freopen(<span class="string">"read.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">  <span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d %d %d"</span>, &amp;n, &amp;k, &amp;W);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;d[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> u, v;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;u, &amp;v);</span><br><span class="line">    g[u].push_back(v);</span><br><span class="line">    g[v].push_back(u);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">      cnt += d[j] &gt; d[i] || (d[j] == d[i] &amp;&amp; j &lt; i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (cnt &lt; k) &#123;</span><br><span class="line">      <span class="keyword">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">memset</span>(f, <span class="number">0</span>, <span class="keyword">sizeof</span> f);</span><br><span class="line">    f[i][<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> v: g[i]) &#123;</span><br><span class="line">      dfs(i, v, i);</span><br><span class="line">    &#125;</span><br><span class="line">    (ans += (ll)f[i][k] * d[i] % mod) %= mod;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, ans);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在大佬博客下发现了出题人的吐槽：</p>
-<p><img src="https://s2.ax1x.com/2019/03/07/kxQb8K.png" alt=""></p>
-<p>呵呵。。。</p>
+<p>第一问要求最优匹配使得每个选手的志愿字典序尽量小，那么很容易想到贪心做法，对于每个选手依次连接从高到低的志愿边，每连完一组志愿边就判断匹配是否可以加一，贪心取最小的志愿就行. 证明也很简单.</p>
+<p>第二问也是按照第一问的思路，二分位置后，对于前面的点连接所有第一问求出来的志愿边，当前点连接所有 $ s_i $ 及以上的志愿边，判断是否匹配即可.</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">Created 2019-3-1</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">200</span> + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> S, T;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Edge</span> &#123;</span></span><br><span class="line">  Edge *next, *rev;</span><br><span class="line">  <span class="keyword">int</span> v, c;</span><br><span class="line">  Edge () &#123;&#125;</span><br><span class="line">  Edge (Edge *next, <span class="keyword">int</span> v, <span class="keyword">int</span> c) : next(next), v(v), c(c) &#123;&#125;</span><br><span class="line">&#125; *head[<span class="number">2</span>*N], *cur[<span class="number">2</span>*N], pool[<span class="number">2</span>*N*N], *pt = pool;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add_edge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c)</span> </span>&#123;</span><br><span class="line">  head[u] = <span class="keyword">new</span> (pt++) Edge (head[u], v, c);</span><br><span class="line">  head[v] = <span class="keyword">new</span> (pt++) Edge (head[v], u, <span class="number">0</span>);</span><br><span class="line">  head[u]-&gt;rev = head[v];</span><br><span class="line">  head[v]-&gt;rev = head[u];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> lvl[<span class="number">2</span>*N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">bfs</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">memset</span>(lvl, <span class="number">-1</span>, <span class="keyword">sizeof</span> lvl);</span><br><span class="line">  lvl[S] = <span class="number">0</span>;</span><br><span class="line">  <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</span><br><span class="line">  q.push(S);</span><br><span class="line">  <span class="keyword">while</span> (!q.empty()) &#123;</span><br><span class="line">    <span class="keyword">int</span> u = q.front();</span><br><span class="line">    q.pop();</span><br><span class="line">    <span class="keyword">for</span> (Edge *e = head[u]; e; e = e-&gt;next) &#123;</span><br><span class="line">      <span class="keyword">if</span> (e-&gt;c &amp;&amp; lvl[e-&gt;v] == <span class="number">-1</span>) &#123;</span><br><span class="line">        lvl[e-&gt;v] = lvl[u] + <span class="number">1</span>;</span><br><span class="line">        q.push(e-&gt;v);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> lvl[T] != <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> f)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (u == T || f == <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> f;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">int</span> vf = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (Edge *e = cur[u]; e; e = e-&gt;next, cur[u] = e) &#123;</span><br><span class="line">    <span class="keyword">if</span> (e-&gt;c &amp;&amp; lvl[e-&gt;v] == lvl[u] + <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="keyword">int</span> fl = dfs(e-&gt;v, min(e-&gt;c, f));</span><br><span class="line">      vf += fl;</span><br><span class="line">      f -= fl;</span><br><span class="line">      e-&gt;c -= fl;</span><br><span class="line">      e-&gt;rev-&gt;c += fl;</span><br><span class="line">      <span class="keyword">if</span> (f == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (!vf) &#123;</span><br><span class="line">    lvl[u] = <span class="number">-1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> vf;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dinic</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> mxf = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> (bfs()) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = S; i &lt;= T; i++) &#123;</span><br><span class="line">      cur[i] = head[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">int</span> f = dfs(S, INF)) &#123;</span><br><span class="line">      mxf += f;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> mxf;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> b[N], s[N];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; idl[N][N];</span><br><span class="line"><span class="keyword">int</span> ans1[N], sum[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">  freopen(<span class="string">"read.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">  freopen(<span class="string">"write.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">  <span class="keyword">int</span> Test, C;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;Test, &amp;C);</span><br><span class="line">  <span class="keyword">while</span> (Test--) &#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;n, &amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; N; j++) &#123;</span><br><span class="line">        idl[i][j].clear();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">      <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;b[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++) &#123;</span><br><span class="line">        <span class="keyword">int</span> id;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;id);</span><br><span class="line">        idl[i][id].push_back(j);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">      <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;s[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    S = <span class="number">0</span>, T = n + m + <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">memset</span>(head, <span class="number">0</span>, <span class="keyword">sizeof</span> head);</span><br><span class="line">    pt = pool;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">      add_edge(S, i, <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">      add_edge(i + n, T, b[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">      ans1[i] = m + <span class="number">1</span>;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k: idl[i][j]) &#123;</span><br><span class="line">          add_edge(i, k + n, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (dinic() == <span class="number">1</span>) &#123;</span><br><span class="line">          ans1[i] = j;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">"%d "</span>, ans1[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">""</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">      sum[i] = sum[i<span class="number">-1</span>] + (ans1[i] &lt;= m);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">      <span class="keyword">int</span> l = <span class="number">-1</span>, r = i;</span><br><span class="line">      <span class="keyword">while</span> (r - l &gt; <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">int</span> mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">        <span class="built_in">memset</span>(head, <span class="number">0</span>, <span class="keyword">sizeof</span> head);</span><br><span class="line">        pt = pool;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">          add_edge(S, j, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++) &#123;</span><br><span class="line">          add_edge(j + n, T, b[j]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; i - mid; j++) &#123;</span><br><span class="line">          <span class="keyword">for</span> (<span class="keyword">int</span> k: idl[j][ans1[j]]) &#123;</span><br><span class="line">            add_edge(j, k + n, <span class="number">1</span>);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> mf = dinic();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= s[i]; j++) &#123;</span><br><span class="line">          <span class="keyword">for</span> (<span class="keyword">int</span> k: idl[i][j]) &#123;</span><br><span class="line">            add_edge(i, k + n, <span class="number">1</span>); </span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (dinic() == <span class="number">1</span>) &#123;</span><br><span class="line">          r = mid;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          l = mid;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">"%d "</span>, r);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">""</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>吐槽：因为没清空内存调了半天；去年考试不会网络流，于是最后捡了 5 分，成功避免爆零惨剧.</p>
 
       
     </div>
@@ -473,11 +463,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/九省联考/" rel="tag"># 九省联考</a>
+          
             <a href="/tags/2018/" rel="tag"># 2018</a>
           
-            <a href="/tags/动态规划/" rel="tag"># 动态规划</a>
-          
-            <a href="/tags/九省联考/" rel="tag"># 九省联考</a>
+            <a href="/tags/网络流/" rel="tag"># 网络流</a>
           
         </div>
       
@@ -490,8 +480,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/05/省选/2018/九省联考/IIIDX/" rel="next" title="「九省2018」IIIDX">
-                <i class="fa fa-chevron-left"></i> 「九省2018」IIIDX
+              <a href="/2019/02/24/OI Life/OI Life(1)/" rel="next" title="OI Life(1)">
+                <i class="fa fa-chevron-left"></i> OI Life(1)
               </a>
             
           </div>
@@ -499,6 +489,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/01/OI Life/OI-Life-2/" rel="prev" title="OI Life(2)">
+                OI Life(2) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -567,7 +561,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -581,6 +575,10 @@
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
                     
+                    
+                      
+                    
+                      
                     
                       
                     
@@ -847,9 +845,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://yclrz.github.io/2019/03/06/省选/2018/九省联考/秘密袭击/";
-    this.page.identifier = "2019/03/06/省选/2018/九省联考/秘密袭击/";
-    this.page.title = '「九省2018」秘密袭击';
+    this.page.url = "https://yclrz.github.io/2019/03/01/劈配/";
+    this.page.identifier = "2019/03/01/劈配/";
+    this.page.title = '「九省2018」劈配';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
