@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yclrz.github.io/"/>
-  <updated>2019-03-16T13:55:10.015Z</updated>
+  <updated>2019-03-16T17:51:08.798Z</updated>
   <id>https://yclrz.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://yclrz.github.io/2019/03/15/OI%20Life/OI-Life-4/"/>
     <id>https://yclrz.github.io/2019/03/15/OI Life/OI-Life-4/</id>
     <published>2019-03-15T02:10:33.000Z</published>
-    <updated>2019-03-16T13:55:10.015Z</updated>
+    <updated>2019-03-16T17:51:08.798Z</updated>
     
     <content type="html"><![CDATA[<p>OI Life(4)</p><a id="more"></a><p>星期五：</p><p>总算做完了HNOI2018（除了毒瘤题学不会虚🌲就没做），myy出的寻宝游戏是个智商检测器，我这种煞笔就想不到. 游戏和排列两题前面都很好想，就是最后一步不能想通透，还是我思维强度太弱了，想着想着就想不动了qwq. 道路在洛谷上是蓝题，所以没有什么评价. 唯一一道可做的数据结构是转盘，用到了线段树维护区间的思想，记得某位神犇在博客里说过，线段树可以维护很多区间合并的问题，关键就是怎样合并.</p><p>星期六：</p><p>JSOI2018太难了，苣蒻被难哭了😭</p><p>整场比赛就只会潜入行动和列队两题，防御网络被大佬骂成傻逼题了，但是苣蒻却还是想不明白🥺</p><p>绝地反击和战争是两道计算几何，苣蒻只会前一题，后一题看了看大佬的题解完全看不明白，两道计几做都不敢做（<del>当年花三天调一道计几给我留下了深刻的阴影qwq</del>）</p><p>希望今年的十二省不要这么难啊qwq</p><p>P.S. 列队卡了一个log，窝太菜了qwq需要继续想办法去掉一个log</p>]]></content>
     
@@ -31,6 +31,8 @@
     
     </summary>
     
+    
+      <category term="OI Life" scheme="https://yclrz.github.io/tags/OI-Life/"/>
     
   </entry>
   
@@ -122,9 +124,9 @@
     
       <category term="2018" scheme="https://yclrz.github.io/tags/2018/"/>
     
-      <category term="贪心" scheme="https://yclrz.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
-    
       <category term="线段树" scheme="https://yclrz.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="贪心" scheme="https://yclrz.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
