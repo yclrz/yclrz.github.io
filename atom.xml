@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yclrz.github.io/"/>
-  <updated>2019-03-12T02:53:36.411Z</updated>
+  <updated>2019-03-16T13:55:10.015Z</updated>
   <id>https://yclrz.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OI Life(4)</title>
+    <link href="https://yclrz.github.io/2019/03/15/OI%20Life/OI-Life-4/"/>
+    <id>https://yclrz.github.io/2019/03/15/OI Life/OI-Life-4/</id>
+    <published>2019-03-15T02:10:33.000Z</published>
+    <updated>2019-03-16T13:55:10.015Z</updated>
+    
+    <content type="html"><![CDATA[<p>OI Life(4)</p><a id="more"></a><p>星期五：</p><p>总算做完了HNOI2018（除了毒瘤题学不会虚🌲就没做），myy出的寻宝游戏是个智商检测器，我这种煞笔就想不到. 游戏和排列两题前面都很好想，就是最后一步不能想通透，还是我思维强度太弱了，想着想着就想不动了qwq. 道路在洛谷上是蓝题，所以没有什么评价. 唯一一道可做的数据结构是转盘，用到了线段树维护区间的思想，记得某位神犇在博客里说过，线段树可以维护很多区间合并的问题，关键就是怎样合并.</p><p>星期六：</p><p>JSOI2018太难了，苣蒻被难哭了😭</p><p>整场比赛就只会潜入行动和列队两题，防御网络被大佬骂成傻逼题了，但是苣蒻却还是想不明白🥺</p><p>绝地反击和战争是两道计算几何，苣蒻只会前一题，后一题看了看大佬的题解完全看不明白，两道计几做都不敢做（<del>当年花三天调一道计几给我留下了深刻的阴影qwq</del>）</p><p>希望今年的十二省不要这么难啊qwq</p><p>P.S. 列队卡了一个log，窝太菜了qwq需要继续想办法去掉一个log</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;OI Life(4)&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>「HNOI2018」游戏</title>
+    <link href="https://yclrz.github.io/2019/03/14/%E6%B8%B8%E6%88%8F/"/>
+    <id>https://yclrz.github.io/2019/03/14/游戏/</id>
+    <published>2019-03-14T07:33:32.000Z</published>
+    <updated>2019-03-14T08:16:41.834Z</updated>
+    
+    <content type="html"><![CDATA[<p>前置技能：🧠</p><a id="more"></a><p>没错这又是一道考验脑子的题.</p><p>对每一个点尝试处理出能走到的左右边界，显然这段是连续的，那么就可以 $ O(1) $ 回答询问.</p><p>假设可以从 $ i $ 转移到 $ i + 1 $，那 $ i + 1 \rightarrow i $ 这扇门的钥匙肯定在 $ i + 1 $ 这边，并且在处理 $ i + 1 $ 之前需要处理掉 $ i $，然后不断地向左右方向拓展.</p><p>关于复杂度，首先给个图.</p><p><img src="https://s2.ax1x.com/2019/03/14/AANXWt.png" alt=""></p><p>通过这个图可以发现转移顺序是个 DAG，中间点转移是 $ O(1) $，底层点没有转移，最上层点转移是 $ O(n) $，但同时可以发现两个相邻上层点之间是没有重合的，也就是所有上层点加起来是 $ O(n) $（这一点图上没有表现出来，需要yy一下）.<br><del>（上面的证明实在是粗糙所以可能是假的）</del></p><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">Created 2019-3-14</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1000000</span> + <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m, p;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> np[N], pos[N];</span><br><span class="line"><span class="keyword">int</span> l[N], r[N];</span><br><span class="line"></span><br><span class="line"><span class="keyword">bool</span> done[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (done[u]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  l[u] = r[u] = u;</span><br><span class="line">  <span class="keyword">if</span> (u &gt; <span class="number">1</span> &amp;&amp; pos[u<span class="number">-1</span>] &gt;= u) &#123;</span><br><span class="line">    dfs(u<span class="number">-1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (u &lt; n &amp;&amp; pos[u] &lt;= u) &#123;</span><br><span class="line">    dfs(u+<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">bool</span> ok = <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">while</span> (ok) &#123;</span><br><span class="line">    ok = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (l[u] &gt; <span class="number">1</span> &amp;&amp; l[u] &lt;= pos[l[u]<span class="number">-1</span>] &amp;&amp; pos[l[u]<span class="number">-1</span>] &lt;= r[u]) &#123;</span><br><span class="line">      l[u] = l[l[u]<span class="number">-1</span>];</span><br><span class="line">      ok = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (r[u] &lt; n &amp;&amp; l[u] &lt;= pos[r[u]] &amp;&amp; pos[r[u]] &lt;= r[u]) &#123;</span><br><span class="line">      r[u] = r[r[u]+<span class="number">1</span>];</span><br><span class="line">      ok = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  done[u] = <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="meta">#<span class="meta-keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">  freopen(<span class="string">"read.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">  <span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d %d %d"</span>, &amp;n, &amp;m, &amp;p);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> x, y;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;x, &amp;y);</span><br><span class="line">    pos[x] = y;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    np[i] = j;</span><br><span class="line">    j += (pos[i] != <span class="number">0</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    pos[np[i]] = np[pos[i]];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!done[np[i]]) &#123;</span><br><span class="line">      dfs(np[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">while</span> (p--) &#123;</span><br><span class="line">    <span class="keyword">int</span> s, t;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;s, &amp;t);</span><br><span class="line">    s = np[s], t = np[t];</span><br><span class="line">    <span class="built_in">puts</span>(l[s] &lt;= t &amp;&amp; t &lt;= r[s] ? <span class="string">"YES"</span> : <span class="string">"NO"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前置技能：🧠&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="2018" scheme="https://yclrz.github.io/tags/2018/"/>
+    
+      <category term="HNOI" scheme="https://yclrz.github.io/tags/HNOI/"/>
+    
+      <category term="adhoc" scheme="https://yclrz.github.io/tags/adhoc/"/>
+    
+  </entry>
   
   <entry>
     <title>「HNOI2018」寻宝游戏</title>
