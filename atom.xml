@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yclrz.github.io/"/>
-  <updated>2019-03-30T08:18:49.358Z</updated>
+  <updated>2019-03-30T05:56:33.030Z</updated>
   <id>https://yclrz.github.io/</id>
   
   <author>
@@ -15,24 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>「SHOI2016」黑暗前的幻想乡</title>
-    <link href="https://yclrz.github.io/2019/03/30/%E9%A2%98%E8%A7%A3/%E9%BB%91%E6%9A%97%E5%89%8D%E7%9A%84%E5%B9%BB%E6%83%B3%E4%B9%A1/"/>
-    <id>https://yclrz.github.io/2019/03/30/题解/黑暗前的幻想乡/</id>
-    <published>2019-03-30T06:21:39.000Z</published>
-    <updated>2019-03-30T08:18:49.358Z</updated>
-    
-    <content type="html"><![CDATA[<p>这题是反演吗？</p><a id="more"></a><p>并不是呀.</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这题是反演吗？&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>「JLOI/SHOI2016」成绩比较</title>
